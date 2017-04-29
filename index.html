@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8" />
+        <title>Labb3 AngularJS</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <h1>Labb3</h1>
+        <h2>What do famous people say?</h2>
+        <div class="buttons" >
+            <h3><a href="#!/einstein">Albert Einstein</a></h3>
+            <h3><a href="#!/hawking">Stephen Hawking</a></h3>
+            <h3><a href="#!/thatcher">Margaret Thatcher</a></h3>
+            <h3><a href="#!/reagan">Ronald Reagan</a></h3>
+        </div>
+        
+        <ui-view></ui-view>
+
+
+
+        <h4>lite mer här</h4>
+        <div ng-controller="AddController">{{add(2, 2)}}</div>
+
+        <div ng-controller="CityController">{{cities}}</div>
+
+        <bottom-signature></bottom-signature>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src='script.js'></script>
+    </body>
+</html>
